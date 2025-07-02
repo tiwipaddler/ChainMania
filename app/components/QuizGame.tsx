@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "./DemoComponents";
 import { useOpenUrl } from "@coinbase/onchainkit/minikit";
+import { sdk } from '@farcaster/frame-sdk';
 
 // Placeholder quiz data
 const quizQuestions = [
@@ -59,6 +60,10 @@ const quizQuestions = [
 ];
 
 const QuizGame: React.FC = () => {
+  useEffect(() => {
+    sdk.actions.ready();
+  }, []);
+
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
