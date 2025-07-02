@@ -21,8 +21,8 @@
       "tagline": "Do you know your blockchains?"
     },
     "accountAssociation": {
-      "header": "eyJmaWQiOjg4ODYwMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEU4Q2FlQUJkMGY2OUJhMGQ1MTE1ZDEzNTk3OWJCOGQ4RDYyMzExQjkifQ",
-      "payload": "eyJkb21haW4iOiJjaGFpbm1hbmlhLXRpd2lwYWRkbGVycy1wcm9qZWN0cy52ZXJjZWwuYXBwIn0",
-      "signature": "MHg1YjE1NzNjN2JlMTJmZTkwYzk3MmYzZjQ4NjFhNDVmOTgzYTdhNzQxZGNiNDYyYzAzYzI5NDc0Nzc4NzcyNDBkMWVlMDJkYzMzNTJiMWEyZjE1MjBmZjIyZmI4OTY2ZjE0YWY3MTE0MWJkODA0Mzk2YWU4ZDg3ZmYxZjBmYmVjZDFi"
-    }
+        "header": "eyJmaWQiOjg4ODYwMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEU4Q2FlQUJkMGY2OUJhMGQ1MTE1ZDEzNTk3OWJCOGQ4RDYyMzExQjkifQ",
+        "payload": "eyJkb21haW4iOiJjaGFpbm1hbmlhLnZlcmNlbC5hcHAifQ",
+        "signature": "MHhlZWJiNmRlZDkzM2MwYzlmZjM1ZTZiZWU2ZGRjMDE2ZDA2ZjBkMTg0MjJjNjY4NjRlNGNlNTczZGQ2ZjY5MzYyN2U5Y2QxNzczMGQ3MzM2YmQ2ZTU3ZjMxODk1ZTQxZTBlYWRkMGI5OTJkMjY1ODllNWQxZWYyM2MxYThkOGNlYzFj"
+        }
   }
