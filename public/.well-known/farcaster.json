@@ -1,32 +1,37 @@
+
+
 {
-  "frame": {
-    "name": "Chain Mania",
-    "version": "1",
-    "iconUrl": "https://github.com/tiwipaddler/ChainMania/blob/5224000a8f49d98e1e233976217bb1bb0836c2ce/public/chainmaniademo.png",
-    "homeUrl": "https://chainmania-8t3r3vesl-tiwipaddlers-projects.vercel.app",
-    "imageUrl": "https://github.com/tiwipaddler/ChainMania/blob/5224000a8f49d98e1e233976217bb1bb0836c2ce/public/chainmaniademo.png",
-    "splashImageUrl": "https://github.com/tiwipaddler/ChainMania/blob/5224000a8f49d98e1e233976217bb1bb0836c2ce/public/chainmaniademo.png",
-    "splashBackgroundColor": "#00FA9A",
-    "webhookUrl": "https://chainmania-8t3r3vesl-tiwipaddlers-projects.vercel.app/api/webhook",
-    "subtitle": "Name the chain!",
-    "description": "How well do you know blockchain?",
-    "primaryCategory": "games",
-    "tags": [
-      "chainmania",
-      "education",
-      "blockchaineducation",
-      "web3education",
-      "web3quiz"
-    ],
-    "tagline": "Do you know your blockchains?",
-    "screenshotUrls": [
-      "https://github.com/tiwipaddler/ChainMania/blob/5224000a8f49d98e1e233976217bb1bb0836c2ce/public/chainmaniademo.png"
-    ],
-    "heroImageUrl": "https://github.com/tiwipaddler/ChainMania/blob/5224000a8f49d98e1e233976217bb1bb0836c2ce/public/chainmaniademo.png"
-  },
-  "accountAssociation": {
-    "header": "eyJmaWQiOjg4ODYwMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEU4Q2FlQUJkMGY2OUJhMGQ1MTE1ZDEzNTk3OWJCOGQ4RDYyMzExQjkifQ",
-    "payload": "eyJkb21haW4iOiJjaGFpbm1hbmlhLnZlcmNlbC5hcHAifQ",
-    "signature": "MHhlZWJiNmRlZDkzM2MwYzlmZjM1ZTZiZWU2ZGRjMDE2ZDA2ZjBkMTg0MjJjNjY4NjRlNGNlNTczZGQ2ZjY5MzYyN2U5Y2QxNzczMGQ3MzM2YmQ2ZTU3ZjMxODk1ZTQxZTBlYWRkMGI5OTJkMjY1ODllNWQxZWYyM2MxYThkOGNlYzFj"
+    "frame": {
+      "name": "Chain Mania",
+      "version": "1",
+      "iconUrl": "https://chainmania.vercel.app/icon.png",
+      "homeUrl": "https://chainmania.vercel.app",
+      "imageUrl": "https://chainmania.vercel.app/chainmaniademo.png",
+      "buttonTitle": "Let's Begin!",
+      "splashImageUrl": "https://chainmania.vercel.app/chainmaniademo.png",
+      "splashBackgroundColor": "#00FA9A",
+      "webhookUrl": "https://chainmania.vercel.app/api/webhook",
+      "subtitle": "Name the chain!",
+      "description": "How ell do you know blockchain?",
+      "screenshotUrls": [
+        "https://chainmania.vercel.app/chainmaniademo.png"
+      ],
+      "primaryCategory": "games",
+      "tags": [
+        "education",
+        "web3education",
+        "blockchainquiz"
+      ],
+      "heroImageUrl": "https://chainmania.vercel.app/chainmaniademo.png",
+      "tagline": "Do you know your blockchains?",
+      "ogTitle": "ChainMania - Know the Chain?",
+      "ogDescription": "Show off your web3 knowledge",
+      "ogImageUrl": "https://chainmania.vercel.app/chainmaniademo.png",
+      "castShareUrl": "https://chainmania.vercel.app/chainmaniademo.png"
+    },
+    "accountAssociation": {
+      "header": "eyJmaWQiOjg4ODYwMiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEU4Q2FlQUJkMGY2OUJhMGQ1MTE1ZDEzNTk3OWJCOGQ4RDYyMzExQjkifQ",
+      "payload": "eyJkb21haW4iOiJjaGFpbm1hbmlhLnZlcmNlbC5hcHAifQ",
+      "signature": "MHhlZWJiNmRlZDkzM2MwYzlmZjM1ZTZiZWU2ZGRjMDE2ZDA2ZjBkMTg0MjJjNjY4NjRlNGNlNTczZGQ2ZjY5MzYyN2U5Y2QxNzczMGQ3MzM2YmQ2ZTU3ZjMxODk1ZTQxZTBlYWRkMGI5OTJkMjY1ODllNWQxZWYyM2MxYThkOGNlYzFj"
+    }
   }
-}
