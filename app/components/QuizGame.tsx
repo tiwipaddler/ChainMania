@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "./DemoComponents";
-//import { useOpenUrl } from "@coinbase/onchainkit/minikit";
-import { sdk } from '@farcaster/frame-sdk';
+//import { useOpenUrl, useMiniKit } from "@coinbase/onchainkit/minikit";
+import { sdk } from '@farcaster/miniapp-sdk';
 
 // Placeholder quiz data
 const quizQuestions = [
@@ -22,41 +22,41 @@ const quizQuestions = [
     options: ["Polygon", "Ethereum", "Optimism", "Base"],
     answer: "Polygon",
   },
-  {
-    token: "UNI",
-    options: ["Ethereum", "Solana", "Polygon", "Fantom"],
-    answer: "Ethereum",
-  },
-  {
-    token: "BNB",
-    options: ["Binance Smart Chain", "Ethereum", "Solana", "Avalanche"],
-    answer: "Binance Smart Chain",
-  },
-  {
-    token: "OP",
-    options: ["Optimism", "Ethereum", "Polygon", "Solana"],
-    answer: "Optimism",
-  },
-  {
-    token: "ARB",
-    options: ["Arbitrum", "Ethereum", "Polygon", "Solana"],
-    answer: "Arbitrum",
-  },
-  {
-    token: "AVAX",
-    options: ["Avalanche", "Ethereum", "Polygon", "Solana"],
-    answer: "Avalanche",
-  },
-  {
-    token: "BASE",
-    options: ["Base", "Ethereum", "Polygon", "Solana"],
-    answer: "Base",
-  },
-  {
-    token: "FTM",
-    options: ["Fantom", "Ethereum", "Polygon", "Solana"],
-    answer: "Fantom",
-  },
+  // {
+  //   token: "UNI",
+  //   options: ["Ethereum", "Solana", "Polygon", "Fantom"],
+  //   answer: "Ethereum",
+  // },
+  // {
+  //   token: "BNB",
+  //   options: ["Binance Smart Chain", "Ethereum", "Solana", "Avalanche"],
+  //   answer: "Binance Smart Chain",
+  // },
+  // {
+  //   token: "OP",
+  //   options: ["Optimism", "Ethereum", "Polygon", "Solana"],
+  //   answer: "Optimism",
+  // },
+  // {
+  //   token: "ARB",
+  //   options: ["Arbitrum", "Ethereum", "Polygon", "Solana"],
+  //   answer: "Arbitrum",
+  // },
+  // {
+  //   token: "AVAX",
+  //   options: ["Avalanche", "Ethereum", "Polygon", "Solana"],
+  //   answer: "Avalanche",
+  // },
+  // {
+  //   token: "BASE",
+  //   options: ["Base", "Ethereum", "Polygon", "Solana"],
+  //   answer: "Base",
+  // },
+  // {
+  //   token: "FTM",
+  //   options: ["Fantom", "Ethereum", "Polygon", "Solana"],
+  //   answer: "Fantom",
+  // },
 ];
 
 const QuizGame: React.FC = () => {
@@ -85,12 +85,12 @@ const QuizGame: React.FC = () => {
     }, 700);
   };
 
-  const handleShare = () => {
+  const handleShare = async () => {
     const shareText = `I scored ${score}/10 in the Blockchain Token Quiz! Can you beat me?`;
-    window.open(
-      `https://warpcast.com/compose?text=${encodeURIComponent(shareText)}`,
-      "_blank"
-    );
+    await sdk.actions.composeCast({
+      text: shareText,
+      // Optionally add embeds: [{ url: "https://yourapp.com" }]
+    });
   };
 
   if (showResult) {

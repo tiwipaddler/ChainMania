@@ -12,6 +12,7 @@
     "@coinbase/onchainkit": "latest",
     "@coinbase/wallet-sdk": "^4.3.4",
     "@farcaster/frame-sdk": "^0.0.60",
+    "@farcaster/miniapp-sdk": "^0.1.6",
     "@tanstack/react-query": "^5.81.5",
     "@upstash/redis": "^1.34.4",
     "next": "^15.3.3",
