@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "./DemoComponents";
-import { useOpenUrl } from "@coinbase/onchainkit/minikit";
+//import { useOpenUrl } from "@coinbase/onchainkit/minikit";
 import { sdk } from '@farcaster/frame-sdk';
 
 // Placeholder quiz data
@@ -68,7 +68,7 @@ const QuizGame: React.FC = () => {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
-  const openUrl = useOpenUrl();
+  //const openUrl = useOpenUrl();
 
   const handleAnswer = (option: string) => {
     setSelected(option);
@@ -86,10 +86,10 @@ const QuizGame: React.FC = () => {
   };
 
   const handleShare = () => {
-    // Example: share score via Farcaster (replace with actual sharing logic if available)
     const shareText = `I scored ${score}/10 in the Blockchain Token Quiz! Can you beat me?`;
-    openUrl(
-      `https://warpcast.com/compose?text=${encodeURIComponent(shareText)}`
+    window.open(
+      `https://warpcast.com/compose?text=${encodeURIComponent(shareText)}`,
+      "_blank"
     );
   };
 
